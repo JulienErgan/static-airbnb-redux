@@ -1,10 +1,13 @@
-body {
-  font-family: Helvetica;
+@import "card";
+
+.flat-list { 
+  display: flex;
+  flex-wrap: wrap; 
 }
 
-#root {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.flat {
+	flex: 50% 0 0;
+	cursor: pointer;
+	border: 6px solid transparent;
 }
+
