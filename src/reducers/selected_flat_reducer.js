@@ -1,22 +1,21 @@
-import flats from '../flats';
-
 export default function(state, action) {
-    // compute and return the new state
     if (state === undefined) {
-        // Reducer initialisation
-        return [];
+        // what should be the defalt value for this part of the Redux state
+        // what should be selected flat at the beginning
+        // null - I have no flat selected
+        return null; 
     }
 
     // TODO: handle actions
-    // if (action.type === 'SET_FLATS') {
+
+    // if (action.type === 'SELECT_FLAT') {
     //     return action.payload;
     // } else {
-    //     // be careful - the reducer always need to return something
     //     return state;
     // }
 
     switch(action.type) {
-        case 'SET_FLATS':
+        case 'SELECT_FLAT':
             return action.payload;
      default:
         return state;  
