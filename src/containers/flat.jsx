@@ -6,6 +6,7 @@ class Flat extends Component {
 
     handleClick = () => {
         // REDUX ACTION
+        // debugger
         this.props.selectFlat(this.props.flat);
     }
 
